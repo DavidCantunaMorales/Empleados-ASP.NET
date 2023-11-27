@@ -14,12 +14,15 @@ Asegúrate de tener instalados los siguientes componentes antes de ejecutar la a
 
 1. **Conexión a SQL Server**: Abre SSMS y conecta a tu instancia de SQL Server. Tienes que usar la autenticación de Windows.
 
-2. **Ejecutar Scripts de Creación de Tablas**: En la carpeta `Scripts` de tu proyecto, encontrarás scripts SQL para crear las tablas necesarias en la base de datos. Ejecuta estos scripts en SSMS para configurar tu esquema de base de datos.
+<p align="center">
+  <img src="Imagenes/SQLServerConexion.png" alt="Imagen Sql Server">
+</p>
 
-3. **Actualizar la Cadena de Conexión**: Abre el archivo `appsettings.json` en tu proyecto ASP.NET Core y actualiza la cadena de conexión en la sección `"ConnectionStrings"` con la información correcta para tu base de datos.
+2. **Actualizar la Cadena de Conexión**: Abre el archivo `appsettings.json` en tu proyecto ASP.NET Core y copia la cadena de conexión con la información correcta para tu base de datos.
 
 ```json
 "ConnectionStrings": {
-    "DefaultConnection": "Server=TuServidor;Database=TuBaseDeDatos;User=TuUsuario;Password=TuContraseña;"
+    "ConexionSqlServer": "Server=TuServidor;Database=AppEmpleados;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=true;"
 },
-
+```
+En **Server** vas a poner el nombre del **Server Name** como indico en la foto
