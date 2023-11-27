@@ -1,14 +1,16 @@
 # Empleados-ASP.NET
 
-Este proyecto es un crud de dos entidades mediante la tecnologia ASP .NET y razor pages.
+Este proyecto es un crud de dos entidades ```Departamento``` y ```Empleado``` el empleado depende de los departamentos. Esta realizado mediante la tecnologia ASP .NET y razor pages. Cabe recalcar que este proyecto se ejecuta en Visual Studio.
 
 ## Requisitos Previos
 
-Asegúrate de tener instalados los siguientes componentes antes de ejecutar la aplicación:
+Asegúrate de tener instalados los siguientes componentes antes de ejecutar la aplicación:  
+1. [Microsoft Visual Studio 2022 Community](https://visualstudio.microsoft.com/) en tu máquina.
+En el Visual Studio Installer agrega el paquete **Desarrolló de escritorio de .NET** e instalalo.  
 
-1. **Microsoft SQL Server**: Necesitarás una instancia de SQL Server para la base de datos de tu aplicación. Puedes descargar SQL Server desde [Microsoft SQL Server Downloads](https://www.microsoft.com/sql-server/sql-server-downloads). Recuerda descargar la version ***Express***
+2. **Microsoft SQL Server**: Necesitarás una instancia de SQL Server para la base de datos de tu aplicación. Puedes descargar SQL Server desde [Microsoft SQL Server Downloads](https://www.microsoft.com/sql-server/sql-server-downloads). Recuerda descargar la version ***Express***
 
-2. **Microsoft SQL Server Management Studio (SSMS)**: SSMS es una herramienta gráfica para administrar y trabajar con SQL Server. Puedes descargar SSMS desde [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms).
+3. **Microsoft SQL Server Management Studio (SSMS)**: SSMS es una herramienta gráfica para administrar y trabajar con SQL Server. Puedes descargar SSMS desde [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms).
 
 ## Configuración de la Base de Datos
 
