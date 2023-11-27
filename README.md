@@ -18,11 +18,13 @@ Asegúrate de tener instalados los siguientes componentes antes de ejecutar la a
   <img src="Imagenes/SQLServerConexion.png" alt="Imagen Sql Server">
 </p>
 
-2. **Actualizar la Cadena de Conexión**: Abre el archivo `appsettings.json` en tu proyecto ASP.NET Core y copia la cadena de conexión con la información correcta para tu base de datos.
+2. **Actualizar la Cadena de Conexión**: Abre el archivo `appsettings.json` en tu proyecto ASP.NET y copia la cadena de conexión con la información correcta para tu base de datos.
 
 ```json
 "ConnectionStrings": {
     "ConexionSqlServer": "Server=TuServidor;Database=AppEmpleados;Trusted_Connection=True;MultipleActiveResultSets=true;TrustServerCertificate=true;"
 },
 ```
-En **Server** vas a poner el nombre del **Server Name** como indico en la foto
+En **Server** vas a poner el nombre del **Server Name** como indico en la foto.
+3. **Creacion de Tablas**: Con el proyecto abierto vas a ir a la seccion de **Herramientas** a la opcion **Administrador de paquetes NuGet** y escogeras **Consola del Administrador de paquetes** aqui se abrira una terminal donde dijitaras el siguiente comando.
+``` update-database ```
