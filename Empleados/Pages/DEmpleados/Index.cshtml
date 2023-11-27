@@ -4,13 +4,13 @@
     ViewData["Title"] = "Lista de Empleados";
 }
 
-<div class="container">
+<div class="container pt-5">
     <div class="row">
         <div class="col-9">
-            <h2 class="text-info">Lista de Empleados</h2>
+            <h2>Lista de Empleados</h2>
         </div>
         <div class="col-3">
-            <a class="btn btn-secondary" asp-page="/DEmpleados/Insertar">Crear Nuevo Contacto</a>
+            <a class="btn btn-success" asp-page="/DEmpleados/Insertar">Insertar Empleado</a>
         </div>
     </div>
 
@@ -45,9 +45,9 @@
                             <td>@Html.DisplayFor(m => empleado.Direccion)</td>
                             <td>@Html.DisplayFor(m => empleado.Departamento.NombreDepartamento)</td>
                             <td>
-                                <a class="btn btn-success" asp-page="../DEmpleados/Detalle" asp-route-id="@empleado.Id">Detalle</a>
-                                <a class="btn btn-warning" asp-page="../DEmpleados/Editar" asp-route-id="@empleado.Id">Editar</a>
-                                <a class="btn btn-danger" asp-page="../DEmpleados/Eliminar" asp-route-id="@empleado.Id">Eliminar</a>
+                                <a class="btn btn-dark text-white mt-2 mb-2" asp-page="../DEmpleados/Detalle" asp-route-id="@empleado.Id">Ver</a>
+                                <a class="btn btn-warning text-white mt-2 mb-2" asp-page="../DEmpleados/Editar" asp-route-id="@empleado.Id">Editar</a>
+                                <a class="btn btn-danger mt-2 mb-2" asp-page="../DEmpleados/Eliminar" asp-route-id="@empleado.Id">Eliminar</a>
                             </td>
                         </tr>
                     }

@@ -4,10 +4,11 @@
 	ViewData["Title"] = "Ver Empleado";
 }
 
-<div class="container">
+<div class="container mt-5">
 	<div class="row">
 		<div class="col-8 offset-2">
-			<h2 class="text-info">Detalle del Empleado: @Html.DisplayFor(m => m.Empleado.Nombre)</h2>
+			<h2>Empleado: @Html.DisplayFor(m => m.Empleado.Nombre)</h2>
+			<br />
 			<ul class="list-group">
 				<li class="list-group-item"><strong>ID: </strong>@Html.DisplayFor(m => m.Empleado.Id)</li>
 				<li class="list-group-item"><strong>Nombre: </strong>@Html.DisplayFor(m => m.Empleado.Nombre)</li>
@@ -20,8 +21,8 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-6">
-			<a asp-page="Index" class="btn btn-success">Volver</a>
+		<div class="col-4 offset-2 mt-5">
+			<a asp-page="Index" class="btn btn-dark">Volver</a>
 		</div>
 	</div>
 </div>
