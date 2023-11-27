@@ -1,0 +1,39 @@
+﻿@page
+@model Empleados.Pages.Departamentos.EliminarModel
+@{
+	ViewData["Title"] = "Eliminar Departamento";
+}
+
+<div class="container">
+	<div class="row">
+		<div class="col-8 offset-2">
+			<div class="text-info">Borrar una Categoria</div>
+			<form method="POST">
+
+				<input type="hidden" asp-for="Departamento.Id" />
+
+				<div class="mb-3">
+					<label asp-for="Departamento.NombreDepartamento" class="form-label"></label>
+					<input asp-for="Departamento.NombreDepartamento" class="form-control" readonly placeholder="Ingrese el nombre de departamento" />
+					<span asp-validation-for="Departamento.NombreDepartamento" class="text-danger"></span>
+				</div>
+				<div class="mb-3">
+					<label asp-for="Departamento.Descripcion" class="form-label"></label>
+					<input asp-for="Departamento.Descripcion" class="form-control" readonly />
+					<span asp-validation-for="Departamento.Descripcion" class="text-danger"></span>
+				</div>
+				<div class="mb-3">
+					<label asp-for="Departamento.FechaCreacion" class="form-label"></label>
+					<input asp-for="Departamento.FechaCreacion" class="form-control" readonly />
+					<span asp-validation-for="Departamento.FechaCreacion" class="text-danger"></span>
+				</div>
+				<button type="submit" class="btn btn-primary">Borrar Categoria</button>
+			</form>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-6">
+			<a asp-page="Index" class="btn btn-success">Volver</a>
+		</div>
+	</div>
+</div>

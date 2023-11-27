@@ -1,0 +1,62 @@
+﻿@page
+@model Empleados.Pages.DEmpleados.IndexModel
+@{
+    ViewData["Title"] = "Lista de Empleados";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-9">
+            <h2 class="text-info">Lista de Empleados</h2>
+        </div>
+        <div class="col-3">
+            <a class="btn btn-secondary" asp-page="/DEmpleados/Insertar">Crear Nuevo Contacto</a>
+        </div>
+    </div>
+
+    <br />
+    <br />
+
+    <div class="table-responsive">
+        @if (Model.Empleados.Count() > 0)
+        {
+            <table id="tblContactos" class="table table-striped table-bordered" style="width:100%;">
+                <thead>
+                    <tr>
+                        <th>@Html.DisplayNameFor(m => m.Empleados.FirstOrDefault().Id)</th>
+                        <th>@Html.DisplayNameFor(m => m.Empleados.FirstOrDefault().Nombre)</th>
+                        <th>@Html.DisplayNameFor(m => m.Empleados.FirstOrDefault().FechaNacimiento)</th>
+                        <th>@Html.DisplayNameFor(m => m.Empleados.FirstOrDefault().CorreoElectronico)</th>
+                        <th>@Html.DisplayNameFor(m => m.Empleados.FirstOrDefault().Celular)</th>
+                        <th>@Html.DisplayNameFor(m => m.Empleados.FirstOrDefault().Direccion)</th>
+                        <th>@Html.DisplayNameFor(m => m.Empleados.FirstOrDefault().Departamento)</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var empleado in Model.Empleados)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(m => empleado.Id)</td>
+                            <td>@Html.DisplayFor(m => empleado.Nombre)</td>
+                            <td>@Html.DisplayFor(m => empleado.FechaNacimiento)</td>
+                            <td>@Html.DisplayFor(m => empleado.CorreoElectronico)</td>
+                            <td>@Html.DisplayFor(m => empleado.Celular)</td>
+                            <td>@Html.DisplayFor(m => empleado.Direccion)</td>
+                            <td>@Html.DisplayFor(m => empleado.Departamento.NombreDepartamento)</td>
+                            <td>
+                                <a class="btn btn-success" asp-page="../DEmpleados/Detalle" asp-route-id="@empleado.Id">Detalle</a>
+                                <a class="btn btn-warning" asp-page="../DEmpleados/Editar" asp-route-id="@empleado.Id">Editar</a>
+                                <a class="btn btn-danger" asp-page="../DEmpleados/Eliminar" asp-route-id="@empleado.Id">Eliminar</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p>No hay Empleados</p>
+        }
+    </div>
+</div>

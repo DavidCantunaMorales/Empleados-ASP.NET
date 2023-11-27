@@ -1,0 +1,27 @@
+﻿@page
+@model Empleados.Pages.DEmpleados.DetalleModel
+@{
+	ViewData["Title"] = "Ver Empleado";
+}
+
+<div class="container">
+	<div class="row">
+		<div class="col-8 offset-2">
+			<h2 class="text-info">Detalle del Empleado: @Html.DisplayFor(m => m.Empleado.Nombre)</h2>
+			<ul class="list-group">
+				<li class="list-group-item"><strong>ID: </strong>@Html.DisplayFor(m => m.Empleado.Id)</li>
+				<li class="list-group-item"><strong>Nombre: </strong>@Html.DisplayFor(m => m.Empleado.Nombre)</li>
+				<li class="list-group-item"><strong>Fecha Nacimiento: </strong>@Html.DisplayFor(m => m.Empleado.FechaNacimiento)</li>
+				<li class="list-group-item"><strong>Correo Electronico: </strong>@Html.DisplayFor(m => m.Empleado.CorreoElectronico)</li>
+				<li class="list-group-item"><strong>Celular: </strong>@Html.DisplayFor(m => m.Empleado.Celular)</li>
+				<li class="list-group-item"><strong>Direccion: </strong>@Html.DisplayFor(m => m.Empleado.Direccion)</li>
+				<li class="list-group-item"><strong>Departamento: </strong>@Html.DisplayFor(m => m.Empleado.Departamento.NombreDepartamento)</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-6">
+			<a asp-page="Index" class="btn btn-success">Volver</a>
+		</div>
+	</div>
+</div>

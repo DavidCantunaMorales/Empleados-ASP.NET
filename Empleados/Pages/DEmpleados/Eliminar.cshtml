@@ -1,0 +1,57 @@
+﻿@page
+@model Empleados.Pages.DEmpleados.EliminarModel
+@{
+	ViewData["Title"] = "Eliminar Empleado";
+}
+
+<div class="container">
+	<div class="row">
+		<div class="col-8 offset-2">
+			<div class="text-info">Eliminar Empleado</div>
+			<form method="POST">
+
+				<input type="hidden" asp-for="EmpleadoVm.Empleado.Id" />
+
+				<div class="mb-3">
+					<label asp-for="EmpleadoVm.Empleado.Nombre" class="form-label"></label>
+					<input asp-for="EmpleadoVm.Empleado.Nombre" class="form-control" readonly placeholder="Ingrese el nombre de empleado" />
+					<span asp-validation-for="EmpleadoVm.Empleado.Nombre" class="text-danger"></span>
+				</div>
+				<div class="mb-3">
+					<label asp-for="EmpleadoVm.Empleado.FechaNacimiento" class="form-label"></label>
+					<input asp-for="EmpleadoVm.Empleado.FechaNacimiento" class="form-control" readonly />
+					<span asp-validation-for="EmpleadoVm.Empleado.FechaNacimiento" class="text-danger"></span>
+				</div>
+				<div class="mb-3">
+					<label asp-for="EmpleadoVm.Empleado.CorreoElectronico" class="form-label"></label>
+					<input asp-for="EmpleadoVm.Empleado.CorreoElectronico" class="form-control" readonly />
+					<span asp-validation-for="EmpleadoVm.Empleado.CorreoElectronico" class="text-danger"></span>
+				</div>
+				<div class="mb-3">
+					<label asp-for="EmpleadoVm.Empleado.Celular" class="form-label"></label>
+					<input asp-for="EmpleadoVm.Empleado.Celular" class="form-control" readonly />
+					<span asp-validation-for="EmpleadoVm.Empleado.Celular" class="text-danger"></span>
+				</div>
+				<div class="mb-3">
+					<label asp-for="EmpleadoVm.Empleado.Direccion" class="form-label"></label>
+					<input asp-for="EmpleadoVm.Empleado.Direccion" class="form-control" readonly />
+					<span asp-validation-for="EmpleadoVm.Empleado.Direccion" class="text-danger"></span>
+				</div>
+
+				<!-- Aqui la lista de empleados -->
+				<div class="mb-3">
+					<label asp-for="EmpleadoVm.Empleado.Departamento" class="form-label"></label>
+					<input asp-for="EmpleadoVm.Empleado.Departamento" class="form-control" readonly />
+					<span asp-validation-for="EmpleadoVm.Empleado.Departamento" class="text-danger"></span>
+				</div>
+
+				<button type="submit" class="btn btn-primary">Eliminar Empleado</button>
+			</form>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-6">
+			<a asp-page="Index" class="btn btn-success">Volver</a>
+		</div>
+	</div>
+</div>
