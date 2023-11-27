@@ -1,6 +1,6 @@
 # Empleados-ASP.NET
 
-Este proyecto es un crud de dos entidades ```Departamento``` y ```Empleado``` el empleado depende de los departamentos. Esta realizado mediante la tecnologia ASP .NET y razor pages. Cabe recalcar que este proyecto se ejecuta en Visual Studio.
+Este proyecto es un crud de dos entidades ```Departamento``` y ```Empleado``` el empleado depende de los departamentos. Esta realizado mediante la tecnologia ASP .NET y razor pages. Cabe recalcar que este proyecto se ejecuta en Visual Studio. Recuerda que tienes que abrir la solicion con la extension ```.sln```.
 
 ## Requisitos Previos
 
