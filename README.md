@@ -26,10 +26,12 @@ Asegúrate de tener instalados los siguientes componentes antes de ejecutar la a
 },
 ```
 En **Server** vas a poner el nombre del **Server Name** como indico en la foto.
-<p align="center">
-  <img src="Imagenes/Depuracion.png" alt="Imagen Sql Server">
-</p>
+
 3. **Creacion de Tablas**: Con el proyecto abierto vas a ir a la seccion de **Herramientas** a la opcion **Administrador de paquetes NuGet** y escogeras **Consola del Administrador de paquetes** aqui se abrira una terminal donde dijitaras el siguiente comando.
 ``` update-database ```
 
-4. **Depuracion**: Una vez hecho todos los pasos previos vas a dar en el boton de play con la opcion del depurador **ISS Express**. 
+4. **Depuracion**: Una vez hecho todos los pasos previos vas a dar en el boton de play con la opcion del depurador **ISS Express**.
+
+<p align="center">
+  <img src="Imagenes/Depurador.png" alt="Imagen Sql Server">
+</p>
