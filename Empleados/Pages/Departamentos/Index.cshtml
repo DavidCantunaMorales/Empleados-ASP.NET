@@ -4,14 +4,14 @@
 	ViewData["Title"] = "Lista de Departamentos";
 }
 
-<div class="container">
+<div class="container pt-5">
 
 	<div class="row">
 		<div class="col-9">
-			<h2 class="text-info">Lista de Categorias</h2>
+			<h2>Lista de Departamentos</h2>
 		</div>
 		<div class="col-3">
-			<a class="btn btn-secondary" asp-page="/Departamentos/Insertar">Crear Nuevo Departamento</a>
+			<a class="btn btn-success" asp-page="/Departamentos/Insertar">Insertar Departamento</a>
 		</div>
 	</div>
 
@@ -26,7 +26,7 @@
 					<th>@Html.DisplayNameFor(m => m.Departamentos.FirstOrDefault().NombreDepartamento)</th>
 					<th>@Html.DisplayNameFor(m => m.Departamentos.FirstOrDefault().Descripcion)</th>
 					<th>@Html.DisplayNameFor(m => m.Departamentos.FirstOrDefault().FechaCreacion)</th>
-					<th></th>
+					<th>Acción</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -38,9 +38,9 @@
 						<td>@Html.DisplayFor(m => departamento.Descripcion)</td>
 						<td>@Html.DisplayFor(m => departamento.FechaCreacion)</td>
 						<td>
-							<a class="btn btn-success" asp-page="../Departamentos/Detalle" asp-route-id="@departamento.Id">Detalle</a>
-							<a class="btn btn-warning" asp-page="../Departamentos/Editar" asp-route-id="@departamento.Id">Editar</a>
-							<a class="btn btn-danger" asp-page="../Departamentos/Eliminar" asp-route-id="@departamento.Id">Eliminar</a>
+							<a class="btn btn-dark text-white mt-2 mb-2" asp-page="../Departamentos/Detalle" asp-route-id="@departamento.Id">Ver</a>
+							<a class="btn btn-warning text-white mt-2 mb-2" asp-page="../Departamentos/Editar" asp-route-id="@departamento.Id">Editar</a>
+							<a class="btn btn-danger mt-2 mb-2" asp-page="../Departamentos/Eliminar" asp-route-id="@departamento.Id">Eliminar</a>
 						</td>
 					</tr>
 				}

@@ -17,7 +17,7 @@ namespace Empleados.Pages.Departamentos
         [BindProperty]
         public Departamento Departamento { get; set; }
 
-        public async void OnGet(int id)
+        public async Task OnGet(int id)
         {
             Departamento = await _context.Departamento.FindAsync(id);
         }

@@ -4,22 +4,23 @@
 	ViewData["Title"] = "Editar Departamento";
 }
 
-<div class="container">
+<div class="container pt-4">
 	<div class="row">
 		<div class="col-8 offset-2">
-			<div class="text-info">Editar Departamento</div>
+			<h2>Editar Departamento</h2>
+			<br />
 			<form method="POST">
 
 				<input type="hidden" asp-for="Departamento.Id" />
 
 				<div class="mb-3">
-					<label asp-for="Departamento.NombreDepartamento" class="form-label"></label>
+					<label asp-for="Departamento.NombreDepartamento" class="form-label">Nombre del Departamento:</label>
 					<input asp-for="Departamento.NombreDepartamento" class="form-control" placeholder="Ingrese el nombre de departamento" />
 					<span asp-validation-for="Departamento.NombreDepartamento" class="text-danger"></span>
 				</div>
 				<div class="mb-3">
-					<label asp-for="Departamento.Descripcion" class="form-label"></label>
-					<input asp-for="Departamento.Descripcion" class="form-control" />
+					<label asp-for="Departamento.Descripcion" class="form-label">Descripción:</label>
+					<input asp-for="Departamento.Descripcion" class="form-control" placeholder="Ingrese la descripción del departamento" />
 					<span asp-validation-for="Departamento.Descripcion" class="text-danger"></span>
 				</div>
 				<div class="mb-3">
@@ -27,13 +28,14 @@
 					<input asp-for="Departamento.FechaCreacion" class="form-control" />
 					<span asp-validation-for="Departamento.FechaCreacion" class="text-danger"></span>
 				</div>
-				<button type="submit" class="btn btn-primary">Editar Departamento</button>
+				<br />
+				<button type="submit" class="btn btn-warning text-white">Editar Departamento</button>
 			</form>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-6">
-			<a asp-page="Index" class="btn btn-success">Volver</a>
+		<div class="col-4 offset-2 mt-5">
+			<a asp-page="Index" class="btn btn-primary text-white">Volver</a>
 		</div>
 	</div>
 </div>

@@ -134,3 +134,4 @@ C:\Users\Vivobook Oled\Desktop\Universidad\Quinto Semestre\Programacion Web Avan
 C:\Users\Vivobook Oled\Desktop\Universidad\Quinto Semestre\Programacion Web Avanzada\Primer Parcial\Empleados\Empleados\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\Vivobook Oled\Desktop\Universidad\Quinto Semestre\Programacion Web Avanzada\Primer Parcial\Empleados\Empleados\obj\Debug\net8.0\Empleados.csproj.AssemblyReference.cache
 C:\Users\Vivobook Oled\Desktop\Universidad\Quinto Semestre\Programacion Web Avanzada\Primer Parcial\Empleados\Empleados\obj\Debug\net8.0\Empleados.csproj.CopyComplete
+C:\Users\Vivobook Oled\Desktop\Universidad\Quinto Semestre\Programacion Web Avanzada\Primer Parcial\Empleados\Empleados\obj\Debug\net8.0\Empleados.sourcelink.json

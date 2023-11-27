@@ -4,18 +4,19 @@
 	ViewData["Title"] = "Crear un Departamento";
 }
 
-<div class="container">
+<div class="container mt-4">
 	<div class="row">
 		<div class="col-8 offset-2">
-			<div class="text-info">Crear un Nuevo Departamento</div>
+			<h2>Insertar un Departamento</h2>
+			<br />
 			<form method="POST">
 				<div class="mb-3">
-					<label asp-for="Departamento.NombreDepartamento" class="form-label"></label>
+					<label asp-for="Departamento.NombreDepartamento" class="form-label">Nombre del Departamento:</label>
 					<input asp-for="Departamento.NombreDepartamento" class="form-control" placeholder="Ingrese el nombre de departamento" />
 					<span asp-validation-for="Departamento.NombreDepartamento" class="text-danger"></span>
 				</div>
 				<div class="mb-3">
-					<label asp-for="Departamento.Descripcion" class="form-label"></label>
+					<label asp-for="Departamento.Descripcion" class="form-label">Decripción</label>
 					<input asp-for="Departamento.Descripcion" class="form-control" />
 					<span asp-validation-for="Departamento.Descripcion" class="text-danger"></span>
 				</div>
@@ -24,13 +25,14 @@
 					<input asp-for="Departamento.FechaCreacion" class="form-control" />
 					<span asp-validation-for="Departamento.FechaCreacion" class="text-danger"></span>
 				</div>
-				<button type="submit" class="btn btn-primary">Crear Departamento</button>
+				<br />
+				<button type="submit" class="btn btn-success">Insertar Departamento</button>
 			</form>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-6">
-			<a asp-page="Index" class="btn btn-success">Volver</a>
+		<div class="col-4 offset-2 mt-5">
+			<a asp-page="Index" class="btn btn-primary">Volver</a>
 		</div>
 	</div>
 </div>
